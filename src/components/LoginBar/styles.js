@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const LoginMenu = styled.div`
-  width: 382px;
+  width: 20vw;
   height: 450px;
-  background-color: rgba(0, 0, 0, 0.9);
+  margin: 0 40vw;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   padding: 0 50px;

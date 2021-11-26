@@ -35,6 +35,9 @@ export const UserContainer = styled.div`
   height: 3.95vh;
   display: flex;
   flex-direction: row;
+  p {
+    margin-bottom: 100%;
+  }
 `;
 export const Logo = styled.img`
   height: 100%;

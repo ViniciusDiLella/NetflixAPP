@@ -48,6 +48,13 @@ const RegisterBar = () => {
   if (userToken) {
     return <Redirect to="/dashboard" />;
   }
+  const style = {
+    border: " 1px #555 solid",
+    backgroundColor: "white",
+    width: "100%",
+    borderRadius: "1px",
+    margin: "10px",
+  };
   return (
     <RegisterContainer>
       <RegisterDiv>
@@ -55,12 +62,7 @@ const RegisterBar = () => {
         <RegisterForm onSubmit={handleSubmit(onSubmitFunction)}>
           <TextField
             id="filled-basic"
-            style={{
-              border: " 1px #555 solid",
-              width: "100%",
-              borderRadius: "5px",
-              margin: "10px",
-            }}
+            style={style}
             variant="filled"
             color="warning"
             type="username"
@@ -69,12 +71,7 @@ const RegisterBar = () => {
           />
           <p>{errors.username?.message}</p>
           <TextField
-            style={{
-              border: " 1px #555 solid",
-              width: "100%",
-              borderRadius: "5px",
-              margin: "10px",
-            }}
+            style={style}
             variant="filled"
             color="warning"
             type="email"
@@ -83,12 +80,7 @@ const RegisterBar = () => {
           />
           <p>{errors.email?.message}</p>
           <TextField
-            style={{
-              border: " 1px #555 solid",
-              borderRadius: "5px",
-              width: "100%",
-              margin: "10px",
-            }}
+            style={style}
             variant="filled"
             color="warning"
             type="password"
@@ -99,12 +91,7 @@ const RegisterBar = () => {
           <p>{errors.password?.message}</p>
 
           <TextField
-            style={{
-              border: " 1px #555 solid",
-              width: "100%",
-              borderRadius: "5px",
-              margin: "10px",
-            }}
+            style={style}
             variant="filled"
             color="warning"
             type="password"

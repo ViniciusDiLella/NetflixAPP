@@ -27,7 +27,6 @@ const Header = () => {
           </a>
         </LogoContainer>
         <UserContainer>
-          <p>{username}</p>
           <a href="/">
             <User
               alt="user"

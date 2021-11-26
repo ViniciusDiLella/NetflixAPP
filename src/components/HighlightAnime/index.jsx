@@ -46,21 +46,9 @@ const HighlightAnime = ({ highlight, synopsis }) => {
             {highlight && highlight.synopsis.substr(0, 200)}...
           </HighlightDescription>
           <HighlightButtons>
-            <WatchButton href={`/watch/${highlight.mal_id}`}>
-              {" "}
-              ▶ Watch{" "}
-            </WatchButton>
-            <ListButton
-              href={`/list/add/${highlight.mal_id}`}
-              onClick={
-                (() => setMyList(MyList.push(highlight)),
-                console.log(MyList),
-                () => setMyListON(true))
-              }
-            >
-              {" "}
-              + My List{" "}
-            </ListButton>
+            <a href={highlight.url}>
+              <WatchButton> ▶ Watch </WatchButton>
+            </a>
           </HighlightButtons>
           <HighlightGenres>
             <strong>Gêneros: {genres.join(", ")}</strong>

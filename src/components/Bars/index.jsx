@@ -48,7 +48,9 @@ const Bar = ({ list, title }) => {
           {list &&
             list.map((item, key) => (
               <AnimeContainer width={window.innerWidth / 4.25}>
-                <ListCard item={item} key={key} />
+                <a href={item.url} class="link">
+                  <ListCard item={item} key={key} />
+                </a>
               </AnimeContainer>
             ))}
         </ListScroll>

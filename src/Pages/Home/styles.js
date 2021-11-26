@@ -4,8 +4,15 @@ export const NetflixWallpaper = styled.section`
   height: 100vh;
   width: 100vw;
 `;
-export const TopContainer = styled.div`
-  display: flex;
+export const BotContainer = styled.section`
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+`;
+export const TopContainer = styled.section`
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to bottom, #111 5%, transparent 95%);
 `;
 export const HomeText = styled.div`
   display: flex;

@@ -1,7 +1,8 @@
 import HomeHeader from "../../components/HomeHeader";
 import LoginBar from "../../components/LoginBar";
 import { UrlNetflixWpp } from "../../utils/url";
-import { NetflixWallpaper } from "../Home/styles";
+import { BotContainer, NetflixWallpaper, TopContainer } from "../Home/styles";
+import { LoginPageContainer } from "./styles";
 
 const Signin = () => {
   return (
@@ -13,8 +14,14 @@ const Signin = () => {
           backgroundImage: `url(${UrlNetflixWpp})`,
         }}
       >
-        <HomeHeader login={false}></HomeHeader>
-        <LoginBar></LoginBar>
+        <TopContainer>
+          <BotContainer>
+            <LoginPageContainer>
+              <HomeHeader login={false}></HomeHeader>
+              <LoginBar></LoginBar>
+            </LoginPageContainer>
+          </BotContainer>
+        </TopContainer>
       </NetflixWallpaper>
     </>
   );
