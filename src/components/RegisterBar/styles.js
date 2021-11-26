@@ -22,4 +22,13 @@ export const RegisterDiv = styled.div`
     color: grey;
     font-size: 40px;
   }
+  @media (max-width: 768px) {
+    height: 80vh;
+    width: 80vw;
+    margin: 5vh 10vw;
+    border-top: 1px grey solid;
+    h1 {
+      font-size: 30px;
+    }
+  }
 `;

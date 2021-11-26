@@ -4,9 +4,6 @@ import { AnimeContext } from "../../providers/animes";
 import HighlightAnime from "../../components/HighlightAnime";
 import { HomeMenu, Footer, Loading } from "./styles";
 import Header from "../../components/Header";
-import { TokenContext } from "../../providers/UserToken";
-import { useEffect } from "react";
-import { Redirect } from "react-router";
 
 const Dashboard = () => {
   const { MyListON, Mylist, Highlight, Shonen, Seinen, Romance, Sports } =

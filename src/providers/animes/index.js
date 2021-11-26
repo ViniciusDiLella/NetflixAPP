@@ -10,8 +10,6 @@ export const AnimeProvider = ({ children }) => {
   const [Sports, setSports] = useState([]);
   const [Highlight, setHighlight] = useState(false);
   const [BlackHeader, setBlackHeader] = useState(false);
-  const [MyList, setMyList] = useState([{}]);
-  const [MyListON, setMyListON] = useState(false);
 
   useEffect(() => {
     let dice = Math.floor(Math.random() * 100);
@@ -62,10 +60,6 @@ export const AnimeProvider = ({ children }) => {
   return (
     <AnimeContext.Provider
       value={{
-        MyList,
-        setMyList,
-        MyListON,
-        setMyListON,
         BlackHeader,
         setBlackHeader,
         Highlight,

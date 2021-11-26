@@ -32,4 +32,18 @@ export const HomeText = styled.div`
   button {
     width: 20vw;
   }
+  @media (max-width: 768px) {
+    height: 80vh;
+    width: 80vw;
+    margin: 5vh 10vw;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  button {
+    width: 40%;
+  }
 `;

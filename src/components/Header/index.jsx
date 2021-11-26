@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AnimeContext } from "../../providers/animes";
-import { useToken } from "../../providers/UserToken";
 import {
   HeaderTransparent,
   LogoContainer,
@@ -10,7 +9,6 @@ import {
 } from "./styles";
 const Header = () => {
   const { BlackHeader } = useContext(AnimeContext);
-  const { username } = useToken();
   const theme = {
     transparent: "transparent",
     black: "#141414",

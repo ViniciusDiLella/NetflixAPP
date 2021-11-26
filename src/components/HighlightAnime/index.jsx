@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { AnimeContext } from "../../providers/animes";
 import {
   VerticalContainer,
   HighlightSection,
@@ -13,12 +11,9 @@ import {
   HighlightButtons,
   HighlightGenres,
   WatchButton,
-  ListButton,
 } from "./style";
 
-const HighlightAnime = ({ highlight, synopsis }) => {
-  const { setMyList, MyList, setMyListON } = useContext(AnimeContext);
-
+const HighlightAnime = ({ highlight }) => {
   let highlightDate = new Date(highlight.airing_start);
   let genres = [];
   for (let i in highlight.genres) {

@@ -8,6 +8,14 @@ export const LoginMenu = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 50px;
+  @media (max-width: 768px) {
+    height: 80vh;
+    width: 80vw;
+    margin: 5vh 10vw;
+    h1 {
+      font-size: 30px;
+    }
+  }
 `;
 
 export const LoginForm = styled.form`
