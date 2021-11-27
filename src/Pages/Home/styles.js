@@ -21,6 +21,7 @@ export const HomeText = styled.div`
   margin-left: 37.5vw;
   h1 {
     font-size: 50px;
+    text-align: center;
   }
   h3 {
     font-size: 25px;

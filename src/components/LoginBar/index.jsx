@@ -59,7 +59,7 @@ const LoginBar = () => {
             margin: "10px",
           }}
           {...register("username")}
-          label="Email ou número de telefone"
+          label="Nome de usuario"
           variant="filled"
           color="warning"
         />
